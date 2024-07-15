@@ -90,15 +90,14 @@
    | `a~2`        | 按下鼠标左键2秒,  |
    | `e~2`        | 按下E键2秒,    |
 
-7. ### 非NVIDIA显卡需切换依赖
-   非N卡用户在完成GPU环境搭建以及项目配置后
-   在项目路径内打开终端逐行执行如下命令即可完成依赖切换并正常使用
+7. ### 非NVIDIA显卡使用说明
+   非N卡用户前面步骤都不用看
+   在项目路径内打开终端逐行执行如下命令即可完成，并正常使用
     ```shell
     conda activate mc
-    pip uninstall onnxruntime-gpu
-    pip uninstall paddlepaddle-gpu
-    pip install -r requirements_cpu.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+    pip install -r requirements_dml.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
     ```
+    然后跳到4.运行项目。（中文用户名问题请看前面）
 
 8. ### todo
 	* ~~优化内存占用~~
